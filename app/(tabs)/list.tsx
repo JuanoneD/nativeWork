@@ -8,7 +8,7 @@ export default function List() {
             <View style={styles.container}>
                 <FlatList
                     data={DATA}
-                    renderItem={({ item }) => <Item nome={item.nome} age={item.idade} data={item.data} s />}
+                    renderItem={({ item }) => <Item nome={item.nome} age={item.idade} data={item.data} image={item.image} />}
                     keyExtractor={item => item.id}
                 />
             </View>
